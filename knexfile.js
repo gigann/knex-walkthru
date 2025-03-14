@@ -6,10 +6,10 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
-    connection: {
-      filename: './dev.sqlite3'
-    }
+    client: 'pg',
+    connection: 'postgres://USER_NAME:USER_PASSWORD@localhost/DATABASE_NAME'
+    // replace USER_NAME, USER_PASSWORD, and DATABASE_NAME with your Docker PostgreSQL container's username, password and an *empty* database
+    // that you have created on your Docker PostgreSQL container volume
   },
 
   staging: {
