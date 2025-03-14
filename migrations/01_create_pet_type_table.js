@@ -3,7 +3,6 @@ exports.up = function(knex) {
         .createTable('pet_type', table => {
             table.increments('id');
             table.string('name').notNullable();
-            table.timestamps(true, true);
         });
 };
 
